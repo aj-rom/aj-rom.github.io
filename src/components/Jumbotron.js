@@ -9,7 +9,7 @@ export default class Jumbotron extends Component {
                 <p>We will be up and running in no time.</p>
                 <p className="lead">
                     <a className="btn btn-primary btn-md" href="https://github.com/aj-rom" role="button">My GitHub</a>
-                    <a className="btn btn-primary btn-md" href="https://linkedin.com/aj-romaniello" role="button">Linked In</a>
+                    <a className="btn btn-primary btn-md" href="https://www.linkedin.com/in/aj-romaniello" role="button">Linked In</a>
                 </p>
             </div>
         )
