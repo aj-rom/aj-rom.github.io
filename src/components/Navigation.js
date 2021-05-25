@@ -21,7 +21,7 @@ export default class Navigation extends Component {
                             <a className="nav-link" href="#">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
+                            <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true"></a>
                         </li>
                     </ul>
                 </div>
