@@ -1,0 +1,12 @@
+header {
+    text-align: center;
+}
+
+#jumbotron nav {
+    justify-content: center;
+    margin-block-end: 1em;
+}
+
+#jumbotron nav ul li {
+    margin-inline-end: 10px;
+}
