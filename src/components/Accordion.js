@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-export default class Accordian extends Component {
+export default class Accordion extends Component {
 
     constructor(props) {
         super(props);
