@@ -10,3 +10,18 @@ header {
 #jumbotron nav ul li {
     margin-inline-end: 10px;
 }
+#projects a {
+    color: inherit
+}
+
+#projects a:link {
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: none;
+}
+
+#projects a:active {
+    text-decoration: none;
+}
