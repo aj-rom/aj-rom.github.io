@@ -10,31 +10,11 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.fluid.classless.min.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>A.J. Romaniello - Portfolio</title>
   </head>
   <body>
-    <nav class="container-fluid">
-      <ul>
-        <li><strong>A.J. Romaniello</strong></li>
-      </ul>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/resume">Resume</a></li>
-        <li class='secondary'><a href="https://github.com/aj-rom/aj-rom.github.io">
-          <img alt="Source Code" src='./assets/GitHub-Mark-Light-64px.png' height='32px' width='32px'/>
-        </a></li>
-      </ul>
-    </nav>
-    <main class="container" id="root"></main>
-    <footer class="container-fluid">
-        <h6>This is the actual footer</h6>
-    </footer>
-    <script>
-      const switchTheme = () => {
-        const theme = document.querySelector('html').dataset
-        console.log(theme)
-      }
-    </script>
+    <div id="root"></div>
   </body>
 </html>
