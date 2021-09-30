@@ -6,14 +6,13 @@ export default class Accordion extends Component {
         super(props);
         this.open = props.open
         this.title = props.title
-        this.content = props.content
     }
 
     render() {
         return (
             <details open={this.open}>
                 <summary>{this.title}</summary>
-                <p>{this.content}</p>
+                {this.props.children}
             </details>
         )
     }
