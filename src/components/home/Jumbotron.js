@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import Accordion from "../Accordion";
 
-export default class Body extends Component {
+export default class Jumbotron extends Component {
     render() {
         return (
             <header id='jumbotron'>
@@ -9,8 +10,7 @@ export default class Body extends Component {
                     <h2>This page is still a work in progress. Bare with me while I build this out to be an awesome portfolio!</h2>
                 </hgroup>
 
-                <details open={true}>
-                    <summary>Switch Theme</summary>
+                <Accordion open={true} title='Theme Switcher'>
                     <nav>
                         <ul>
                             <li>Theme:</li>
@@ -19,7 +19,7 @@ export default class Body extends Component {
                             <li><a href="#" onClick={this.switchToDark}>Dark</a></li>
                         </ul>
                     </nav>
-                </details>
+                </Accordion>
             </header>
         )
     }
