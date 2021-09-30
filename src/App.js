@@ -1,20 +1,17 @@
 import React from 'react'
 import Footer from "./components/Footer";
-import Body from "./components/Jumbotron";
 import NavBar from "./components/NavBar";
+import { BrowserRouter } from "react-router-dom";
+import SwitchContainer from "./containers/SwitchContainer";
 
 const App = () => {
     return (
         <div className='container'>
-            <header>
+            <BrowserRouter>
                 <NavBar/>
-            </header>
-            <main>
-                <Body />
-            </main>
-            <footer>
+                <SwitchContainer/>
                 <Footer />
-            </footer>
+            </BrowserRouter>
         </div>
     )
 }
