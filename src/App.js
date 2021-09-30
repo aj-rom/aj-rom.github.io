@@ -1,14 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Footer from "./components/Footer";
 import Body from "./components/Jumbotron";
+import NavBar from "./components/NavBar";
 
-export default class App extends Component {
-    render() {
-        return (
-            <div className="container">
+const App = () => {
+    return (
+        <div className='container'>
+            <header>
+                <NavBar/>
+            </header>
+            <main>
                 <Body />
+            </main>
+            <footer>
                 <Footer />
-            </div>
-        )
-    }
+            </footer>
+        </div>
+    )
 }
+
+export default App
