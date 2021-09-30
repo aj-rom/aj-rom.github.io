@@ -8,16 +8,6 @@ export default class Body extends Component {
                     <h1>Welcome!</h1>
                     <h2>This page is still a work in progress. Bare with me while I build this out to be an awesome portfolio!</h2>
                 </hgroup>
-                <nav>
-                    <ul>
-                        <li>
-                            <a className="outline" href="https://github.com/aj-rom" role="button">My GitHub</a>
-                        </li>
-                        <li>
-                            <a className="outline" href="https://www.linkedin.com/in/aj-romaniello" role="button">Linked In</a>
-                        </li>
-                    </ul>
-                </nav>
 
                 <details open={true}>
                     <summary>Switch Theme</summary>
@@ -30,7 +20,6 @@ export default class Body extends Component {
                         </ul>
                     </nav>
                 </details>
-
             </header>
         )
     }
