@@ -2,6 +2,12 @@ header {
     text-align: center;
 }
 
+section details {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 #jumbotron nav {
     justify-content: center;
     margin-block-end: 1em;
