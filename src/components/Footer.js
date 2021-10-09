@@ -2,31 +2,30 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer id='footer'>
             <section className='grid'>
-                <article>
+                <section>
                     <hgroup>
-                        <h2>Find Me</h2>
-                        <h3>Links to some important websites that I frequent.</h3>
+                        <h5>Find Me</h5>
+                        <h6>Links to some important websites that I frequent.</h6>
                     </hgroup>
-
                     <ul>
                         {listLink('https://linkedin.com/ajromaniello', 'LinkedIn')}
                         {listLink('https://github.com/aj-rom', 'GitHub')}
                         {listLink('https://dev.com/ajrom', 'Blog')}
                     </ul>
-                </article>
+                </section>
 
-                <article>
+                <section>
                     <hgroup>
-                        <h2>Contact</h2>
-                        <h3>How to get in touch with me.</h3>
+                        <h5>Contact</h5>
+                        <h6>How to get in touch with me.</h6>
                     </hgroup>
-                    <p>The best way to reach me is via email:</p>
                     <ul>
+                        <li>The best way to reach me is via email:</li>
                         {listLink('mailto:ajromaniello@gmail.com?subject=Mail%20From%20Portfolio', 'ajromaniello@gmail.com')}
                     </ul>
-                </article>
+                </section>
             </section>
         </footer>
     )
