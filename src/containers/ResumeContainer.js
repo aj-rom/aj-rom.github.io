@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Jumbotron from "../components/home/Jumbotron";
+import Jumbotron from "../components/Jumbotron";
 
 export default class ResumeContainer extends Component {
 

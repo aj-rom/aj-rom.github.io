@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from "react-redux";
 import {fetchProjects} from "../actions/projectActions";
 import Project from "../components/Project";
-import Jumbotron from "../components/home/Jumbotron";
+import Jumbotron from "../components/Jumbotron";
 
 class ProjectContainer extends Component {
 
