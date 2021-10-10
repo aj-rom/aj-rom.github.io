@@ -1,17 +1,17 @@
 import React from 'react'
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import SwitchContainer from "./containers/SwitchContainer";
 
 const App = () => {
     return (
         <div className='container'>
-            <BrowserRouter>
+            <HashRouter>
                 <NavBar/>
                 <SwitchContainer/>
                 <Footer />
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
