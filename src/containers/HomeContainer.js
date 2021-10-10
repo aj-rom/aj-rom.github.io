@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/home/Jumbotron";
+import Jumbotron from "../components/Jumbotron";
 import Accordion from "../components/Accordion";
 
 export default class HomeContainer extends Component {
@@ -15,9 +15,15 @@ export default class HomeContainer extends Component {
                     <nav>
                         <ul>
                             <li>Theme:</li>
-                            <li><a onClick={this.switchToAuto}>Auto</a></li>
-                            <li><a onClick={this.switchToLight}>Light</a></li>
-                            <li><a onClick={this.switchToDark}>Dark</a></li>
+                            <li>
+                                <button className='contrast' onClick={this.switchToAuto}>Auto</button>
+                            </li>
+                            <li>
+                                <button className='primary' onClick={this.switchToLight}>Light</button>
+                            </li>
+                            <li>
+                                <button className='secondary' onClick={this.switchToDark}>Dark</button>
+                            </li>
                         </ul>
                     </nav>
                 </Accordion>
@@ -25,20 +31,21 @@ export default class HomeContainer extends Component {
         )
     }
 
-    switchToAuto = () => {
-        changeTheme('auto')
+    switchToAuto = (e) => {
+        changeTheme('auto', e)
     }
 
-    switchToLight = () => {
-        changeTheme('light')
+    switchToLight = (e) => {
+        changeTheme('light', e)
     }
 
-    switchToDark = () => {
-        changeTheme('dark')
+    switchToDark = (e) => {
+        changeTheme('dark',e )
     }
 }
 
-function changeTheme(theme) {
+function changeTheme(theme, event) {
+    event.preventDefault()
     const node = document.querySelector('html')
     node.dataset.theme = theme
     return node
