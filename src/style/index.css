@@ -284,6 +284,36 @@ a.contrast:focus {
     --background-color: var(--contrast-focus);
 }
 
+/* Lists */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+    margin: 0;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin: 0;
+}
+
+/* Base Text Style for new sections */
+blockquote,
+dl,
+ol,
+p,
+pre,
+ul {
+    margin-top: 0;
+    margin-bottom: var(--typography-spacing-vertical);
+    color: var(--color);
+    font-size: 1rem;
+    font-style: normal;
+}
+
 /* Extras */
 header {
     text-align: center;
