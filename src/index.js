@@ -5,12 +5,9 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from 'redux-thunk'
 import rootReducer from "./reducers/rootReducer";
 import App from './App'
-import TagManager from 'react-gtm-module';
 import './style/theme/default.css'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
-const tagManager = { gtmId: '6005050345' }
-TagManager.initialize(tagManager)
 
 ReactDOM.render(
   <Provider store={store}>
