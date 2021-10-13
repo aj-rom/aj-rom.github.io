@@ -58,7 +58,7 @@ section details {
 
 #jumbotron nav {
     justify-content: center;
-    margin-block-end: 1em;
+    margin-block-end: 1rem;
 }
 
 #jumbotron nav ul li {
