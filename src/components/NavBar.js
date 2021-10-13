@@ -11,9 +11,11 @@ const NavBar = () => {
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/resume'>Resume</Link></li>
                 <li><Link to='/projects'>Projects</Link></li>
-                <li className='secondary'><a href="https://github.com/aj-rom/aj-rom.github.io">
-                    <img alt="Source Code" src='./assets/GitHub-Mark-Light-64px.png' height='32px' width='32px'/>
-                </a></li>
+                <li className='secondary'>
+                    <a href="https://github.com/aj-rom/aj-rom.github.io">
+                        <div id='github'/>
+                    </a>
+                </li>
             </ul>
         </nav>
     )
