@@ -231,6 +231,59 @@ hgroup > *:last-child {
     font-size: 1rem;
 }
 
+/* Links */
+a {
+    --color: var(--primary);
+    --background-color: transparent;
+    outline: none;
+    background-color: var(--background-color);
+    color: var(--color);
+    text-decoration: var(--text-decoration);
+    transition: background-color var(--transition),
+                color var(--transition),
+                text-decoration var(--transition),
+                box-shadow var(--transition);
+}
+
+a:hover,
+a:active,
+a:focus {
+    --color: var(--primary-hover);
+    --text-decoration: underline;
+}
+
+a:focus {
+    --background-color: var(--primary-focus);
+}
+
+a.secondary {
+    --color: var(--secondary);
+}
+
+a.secondary:hover,
+a.secondary:active,
+a.secondary:focus {
+    --color: var(--secondary-hover);
+}
+
+a.secondary:focus {
+    --background-color: var(--secondary-focus);
+}
+
+a.contrast {
+    --color: var(--contrast);
+}
+
+a.contrast:hover,
+a.contrast:active,
+a.contrast:focus {
+    --color: var(--contrast-hover);
+}
+
+a.contrast:focus {
+    --background-color: var(--contrast-focus);
+}
+
 /* Extras */
 header {
     text-align: center;
