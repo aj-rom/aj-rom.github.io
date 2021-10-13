@@ -347,6 +347,136 @@ svg:not(:root) {
     overflow: hidden;
 }
 
+/* Font Weight (<b> & <strong>) */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/* Buttons */
+button {
+    margin: 0;
+    overflow: visible;
+    font-family: inherit;
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: var(--spacing);
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+    --background-color: var(--primary);
+    --border-color: var(--primary);
+    --color: var(--primary-inverse);
+    --box-shadow: var(--button-box-shadow, rgba(0, 0, 0, 0));
+    padding: var(--element-spacing-vertical) var(--element-spacing-horizontal);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    outline: none;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    color: var(--color);
+    font-size: 1rem;
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
+}
+
+button:hover, button:active, button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    --background-color: var(--primary-hover);
+    --border-color: var(--primary-hover);
+    --box-shadow: var(--button-hover-box-shadow, rgba(0, 0, 0, 0));
+}
+
+/* Secondary button */
+button.secondary,
+input[type="submit"].secondary,
+input[type="button"].secondary {
+    --background-color: var(--secondary);
+    --border-color: var(--secondary);
+    --color: var(--secondary-inverse);
+    cursor: pointer;
+}
+
+button.secondary:hover, button.secondary:active, button.secondary:focus,
+input[type="submit"].secondary:hover,
+input[type="submit"].secondary:active,
+input[type="submit"].secondary:focus,
+input[type="button"].secondary:hover,
+input[type="button"].secondary:active,
+input[type="button"].secondary:focus {
+    --background-color: var(--secondary-hover);
+    --border-color: var(--secondary-hover);
+}
+
+button.secondary:focus,
+input[type="submit"].secondary:focus,
+input[type="button"].secondary:focus {
+    --box-shadow: var(--button-hover-box-shadow, rgba(0, 0, 0, 0)), 0 0 0 var(--outline-width) var(--secondary-focus);
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus {
+    --box-shadow: var(--button-hover-box-shadow, rgba(0, 0, 0, 0)), 0 0 0 var(--outline-width) var(--primary-focus);
+}
+
+/* Contrast Button */
+button.contrast,
+input[type="submit"].contrast,
+input[type="button"].contrast {
+    --background-color: var(--contrast);
+    --border-color: var(--contrast);
+    --color: var(--contrast-inverse);
+}
+
+button.contrast:hover, button.contrast:active, button.contrast:focus,
+input[type="submit"].contrast:hover,
+input[type="submit"].contrast:active,
+input[type="submit"].contrast:focus,
+input[type="button"].contrast:hover,
+input[type="button"].contrast:active,
+input[type="button"].contrast:focus {
+    --background-color: var(--contrast-hover);
+    --border-color: var(--contrast-hover);
+}
+
+button.contrast:focus,
+input[type="submit"].contrast:focus,
+input[type="button"].contrast:focus {
+    --box-shadow: var(--button-hover-box-shadow, rgba(0, 0, 0, 0)), 0 0 0 var(--outline-width) var(--contrast-focus);
+}
+
+button[disabled],
+input[type="submit"][disabled],
+input[type="button"][disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
 /* Extras */
 header {
     text-align: center;
