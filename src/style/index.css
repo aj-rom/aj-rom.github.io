@@ -215,6 +215,22 @@ ul ~ h6 {
     margin-top: var(--typography-spacing-vertical);
 }
 
+/* Heading Group */
+hgroup {
+    margin-bottom: var(--typography-spacing-vertical);
+}
+
+hgroup > * {
+    margin-bottom: 0;
+}
+
+hgroup > *:last-child {
+    --color: var(--muted-color);
+    --font-weight: unset;
+    font-family: unset;
+    font-size: 1rem;
+}
+
 /* Extras */
 header {
     text-align: center;
