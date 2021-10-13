@@ -300,6 +300,20 @@ ul ul {
     margin: 0;
 }
 
+ul,
+ol {
+    padding-left: var(--spacing);
+}
+
+ul li,
+ol li {
+    margin-bottom: calc(var(--typography-spacing-vertical) / 4);
+}
+
+ul li {
+    list-style: square;
+}
+
 /* Base Text Style for new sections */
 blockquote,
 dl,
