@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import { HashRouter } from "react-router-dom";
 import SwitchContainer from "./containers/SwitchContainer";
 
+import './style/index.css'
 const App = () => {
     return (
         <div className='container'>
