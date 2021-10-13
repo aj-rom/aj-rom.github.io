@@ -353,38 +353,6 @@ strong {
     font-weight: bolder;
 }
 
-/* Article / Cards */
-article {
-    margin: var(--section-spacing-vertical) 0;
-    padding: var(--section-spacing-vertical) var(--section-spacing-horizontal);
-    overflow: hidden;
-    border-radius: var(--border-radius);
-    background: var(--card-background-color);
-    box-shadow: var(--card-box-shadow);
-}
-
-article > header,
-article > footer,
-article > pre {
-    margin-right: calc(var(--section-spacing-horizontal) * -1);
-    margin-left: calc(var(--section-spacing-horizontal) * -1);
-    padding: calc(var(--section-spacing-vertical) / 1.5) var(--section-spacing-horizontal);
-    background-color: var(--card-sectionning-background-color);
-}
-
-article > header {
-    margin-top: calc(var(--section-spacing-vertical) * -1);
-    margin-bottom: var(--section-spacing-vertical);
-    border-bottom: var(--border-width) solid var(--card-border-color);
-}
-
-article > footer,
-article > pre {
-    margin-top: var(--section-spacing-vertical);
-    margin-bottom: calc(var(--section-spacing-vertical) * -1);
-    border-top: var(--border-width) solid var(--card-border-color);
-}
-
 /* Navigation */
 nav,
 nav ul {
