@@ -9,7 +9,7 @@ import TagManager from 'react-gtm-module';
 import './style/theme/default.css'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
-const tagManager = { gtmId: '210094211' }
+const tagManager = { gtmId: '6005050345' }
 TagManager.initialize(tagManager)
 
 ReactDOM.render(
