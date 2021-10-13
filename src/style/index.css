@@ -117,6 +117,30 @@ body > footer {
     }
 }
 
+/* Section Responsive Spacing */
+section {
+    margin-bottom: var(--section-spacing-vertical)
+}
+
+/* One Row Grid */
+.grid {
+    grid-column-gap: var(--grid-spacing-horizontal);
+    grid-row-gap: var(--grid-spacing-vertical);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+    }
+}
+
+.grid > * {
+    min-width: 0;
+}
+
 /* Extras */
 header {
     text-align: center;
