@@ -1,0 +1,19 @@
+/* Default Theme */
+:root {
+    --font-family: sans-serif;
+    --line-height: 1.5;
+    --font-weight: 400;
+    --font-size: 16px;
+    --border-radius: .25rem;
+    --border-width: 1px;
+    --outline-width: 3px;
+    --spacing: 1rem;
+    --text-spacing-vertical: 1.5rem;
+    --section-spacing-vertical: calc(var(--spacing) * 2);
+    --section-spacing-horizontal: var(--spacing);
+    --element-spacing-vertical: .75em;
+    --element-spacing-horizontal: 1em;
+    --grid-spacing-vertical: 0;
+    --grid-spacing-horizontal: var(--spacing);
+    --transition: .3s ease-in-out;
+}
