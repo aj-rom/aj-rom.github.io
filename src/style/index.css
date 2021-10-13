@@ -328,6 +328,25 @@ ul {
     font-style: normal;
 }
 
+p {
+    margin-bottom: var(--typography-spacing-vertical);
+}
+
+/* Images & SVG icons */
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+svg:not([fill]) {
+    fill: currentColor;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
 /* Extras */
 header {
     text-align: center;
