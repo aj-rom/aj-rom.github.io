@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Jumbotron from "../components/Jumbotron";
+import Card from "../components/card/Card";
 
 export default class ResumeContainer extends Component {
 
@@ -12,7 +13,7 @@ export default class ResumeContainer extends Component {
                 </Jumbotron>
 
                 <div className='grid'>
-                    <article>
+                    <Card>
                         <hgroup>
                             <h3>Languages</h3>
                             <h4>Programming languages I am proficient in.</h4>
@@ -49,9 +50,9 @@ export default class ResumeContainer extends Component {
                                 </ul>
                             </li>
                         </ul>
-                    </article>
+                    </Card>
 
-                    <article>
+                    <Card>
                         <hgroup>
                             <h3>Frameworks</h3>
                             <h4>Some frameworks I am proficient in.</h4>
@@ -75,7 +76,7 @@ export default class ResumeContainer extends Component {
                                 </ul>
                             </li>
                         </ul>
-                    </article>
+                    </Card>
                 </div>
             </section>
         )

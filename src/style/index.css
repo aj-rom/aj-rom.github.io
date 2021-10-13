@@ -1,0 +1,421 @@
+/* Document Responsive Typography */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tab-size: 4;
+    -ms-text-size-adjust: 100%;
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    text-rendering: optimizeLegibility;
+    cursor: default;
+}
+
+/* Page Sectioning (Containers) */
+main {
+    display: block;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+body > header,
+body > main,
+body > footer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: var(--section-spacing-vertical) 0;
+}
+
+/* Containers */
+.container,
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 510px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1130px;
+    }
+}
+
+/* Containers */
+.container,
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 510px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1130px;
+    }
+}
+
+/* Section Responsive Spacing */
+section {
+    margin-bottom: var(--section-spacing-vertical)
+}
+
+/* One Row Grid */
+.grid {
+    grid-column-gap: var(--grid-spacing-horizontal);
+    grid-row-gap: var(--grid-spacing-vertical);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+    }
+}
+
+.grid > * {
+    min-width: 0;
+}
+
+/* Typography */
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: var(--typography-spacing-vertical);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+
+h1 {
+    --color: var(--h1-color);
+}
+
+h2 {
+    --color: var(--h2-color);
+}
+
+h3 {
+    --color: var(--h3-color);
+}
+
+h4 {
+    --color: var(--h4-color);
+}
+
+h5 {
+    --color: var(--h5-color);
+}
+
+h6 {
+    --color: var(--h6-color);
+}
+
+blockquote ~ h1,
+blockquote ~ h2,
+blockquote ~ h3,
+blockquote ~ h4,
+blockquote ~ h5,
+blockquote ~ h6,
+ol ~ h1,
+ol ~ h2,
+ol ~ h3,
+ol ~ h4,
+ol ~ h5,
+ol ~ h6,
+p ~ h1,
+p ~ h2,
+p ~ h3,
+p ~ h4,
+p ~ h5,
+p ~ h6,
+pre ~ h1,
+pre ~ h2,
+pre ~ h3,
+pre ~ h4,
+pre ~ h5,
+pre ~ h6,
+ul ~ h1,
+ul ~ h2,
+ul ~ h3,
+ul ~ h4,
+ul ~ h5,
+ul ~ h6 {
+    margin-top: var(--typography-spacing-vertical);
+}
+
+/* Heading Group */
+hgroup {
+    margin-bottom: var(--typography-spacing-vertical);
+}
+
+hgroup > * {
+    margin-bottom: 0;
+}
+
+hgroup > *:last-child {
+    --color: var(--muted-color);
+    --font-weight: unset;
+    font-family: unset;
+    font-size: 1rem;
+}
+
+/* Links */
+a {
+    --color: var(--primary);
+    --background-color: transparent;
+    outline: none;
+    background-color: var(--background-color);
+    color: var(--color);
+    text-decoration: var(--text-decoration);
+    transition: background-color var(--transition),
+                color var(--transition),
+                text-decoration var(--transition),
+                box-shadow var(--transition);
+}
+
+a:hover,
+a:active,
+a:focus {
+    --color: var(--primary-hover);
+    --text-decoration: underline;
+}
+
+a:focus {
+    --background-color: var(--primary-focus);
+}
+
+a.secondary {
+    --color: var(--secondary);
+}
+
+a.secondary:hover,
+a.secondary:active,
+a.secondary:focus {
+    --color: var(--secondary-hover);
+}
+
+a.secondary:focus {
+    --background-color: var(--secondary-focus);
+}
+
+a.contrast {
+    --color: var(--contrast);
+}
+
+a.contrast:hover,
+a.contrast:active,
+a.contrast:focus {
+    --color: var(--contrast-hover);
+}
+
+a.contrast:focus {
+    --background-color: var(--contrast-focus);
+}
+
+/* Lists */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+    margin: 0;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: var(--spacing);
+}
+
+ul li,
+ol li {
+    margin-bottom: calc(var(--typography-spacing-vertical) / 4);
+}
+
+ul li {
+    list-style: square;
+}
+
+/* Base Text Style for new sections */
+blockquote,
+dl,
+ol,
+p,
+pre,
+ul {
+    margin-top: 0;
+    margin-bottom: var(--typography-spacing-vertical);
+    color: var(--color);
+    font-size: 1rem;
+    font-style: normal;
+}
+
+p {
+    margin-bottom: var(--typography-spacing-vertical);
+}
+
+/* Images & SVG icons */
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+svg:not([fill]) {
+    fill: currentColor;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Font Weight (<b> & <strong>) */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/* Accessibility */
+[aria-controls] {
+    cursor: pointer;
+}
+
+[aria-disabled="true"],
+[disabled] {
+    cursor: not-allowed;
+}
+
+[aria-hidden="false"][hidden] {
+    display: initial;
+}
+
+[aria-hidden="false"][hidden]:not(:focus) {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+    -ms-touch-action: manipulation;
+}
+
+/* Extras */
+header {
+    text-align: center;
+}
+
+section details {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#jumbotron nav {
+    justify-content: center;
+    margin-block-end: 1rem;
+}
+
+#jumbotron nav ul li {
+    margin-inline-end: 10px;
+}
+#projects a {
+    color: inherit
+}
+
+#projects a:link {
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: none;
+}
+
+#projects a:active {
+    text-decoration: none;
+}
+

@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import './accordian.css'
 
 export default class Accordion extends Component {
 
