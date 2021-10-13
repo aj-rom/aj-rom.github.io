@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
-import Accordion from "../components/Accordion";
+import Accordion from "../components/accordian/Accordion";
+import Button from "../components/buttons/Button";
 
 export default class HomeContainer extends Component {
     render() {
@@ -10,19 +11,19 @@ export default class HomeContainer extends Component {
                     <h1>Welcome!</h1>
                     <h2>This page is still a work in progress. Bare with me while I build this out to be an awesome portfolio!</h2>
                 </Jumbotron>
-
+                <br/>
                 <Accordion open={true} title='Theme Switcher'>
                     <nav>
                         <ul>
                             <li>Theme:</li>
                             <li>
-                                <button className='contrast' onClick={this.switchToAuto}>Auto</button>
+                                <Button className='contrast' onClick={this.switchToAuto}>Auto</Button>
                             </li>
                             <li>
-                                <button className='primary' onClick={this.switchToLight}>Light</button>
+                                <Button className='primary' onClick={this.switchToLight}>Light</Button>
                             </li>
                             <li>
-                                <button className='secondary' onClick={this.switchToDark}>Dark</button>
+                                <Button className='secondary' onClick={this.switchToDark}>Dark</Button>
                             </li>
                         </ul>
                     </nav>
@@ -40,7 +41,7 @@ export default class HomeContainer extends Component {
     }
 
     switchToDark = (e) => {
-        changeTheme('dark',e )
+        changeTheme('dark', e)
     }
 }
 
