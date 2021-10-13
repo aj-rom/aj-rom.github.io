@@ -11,9 +11,131 @@
     --text-spacing-vertical: 1.5rem;
     --section-spacing-vertical: calc(var(--spacing) * 2);
     --section-spacing-horizontal: var(--spacing);
-    --element-spacing-vertical: .75em;
-    --element-spacing-horizontal: 1em;
+    --element-spacing-vertical: .75rem;
+    --element-spacing-horizontal: 1rem;
     --grid-spacing-vertical: 0;
     --grid-spacing-horizontal: var(--spacing);
     --transition: .3s ease-in-out;
+}
+
+@media (min-width: 576px) {
+    :root {
+        --font-size: 17px;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --font-size: 19px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    body > header,
+    body > main,
+    body > footer,
+    section {
+        --section-spacing-vertical: calc(var(--spacing) * 2.5);
+    }
+}
+
+@media (min-width: 768px) {
+    body > header,
+    body > main,
+    body > footer,
+    section {
+        --section-spacing-vertical: calc(var(--spacing) * 3);
+    }
+}
+
+@media (min-width: 992px) {
+    body > header,
+    body > main,
+    body > footer,
+    section {
+        --section-spacing-vertical: calc(var(--spacing) * 3.5);
+    }
+}
+
+@media (min-width: 1200px) {
+    body > header,
+    body > main,
+    body > footer,
+    section {
+        --section-spacing-vertical: calc(var(--spacing) * 4);
+    }
+}
+
+@media (min-width: 576px) {
+    article {
+        --section-spacing-horizontal: calc(var(--spacing) * 1.25);
+    }
+}
+
+@media (min-width: 768px) {
+    article {
+        --section-spacing-horizontal: calc(var(--spacing) * 1.5);
+    }
+}
+
+@media (min-width: 992px) {
+    article {
+        --section-spacing-horizontal: calc(var(--spacing) * 1.75);
+    }
+}
+
+@media (min-width: 1200px) {
+    article {
+        --section-spacing-horizontal: calc(var(--spacing) * 2);
+    }
+}
+
+small {
+    --font-size: 0.875em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    --font-weight: 700;
+}
+
+h1 {
+    --font-size: 2rem;
+    --typography-spacing-vertical: 3rem;
+}
+
+h2 {
+    --font-size: 1.75rem;
+    --typography-spacing-vertical: 2.625rem;
+}
+
+h3 {
+    --font-size: 1.5rem;
+    --typography-spacing-vertical: 2.25rem;
+}
+
+h4 {
+    --font-size: 1.25rem;
+    --typography-spacing-vertical: 1.875em;
+}
+
+h5 {
+    --font-size: 1.125rem;
+    --typography-spacing-vertical: 1.6875rem;
 }
