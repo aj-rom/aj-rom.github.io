@@ -12,7 +12,7 @@ const Footer = () => {
                     <ul>
                         {listLink('https://linkedin.com/ajromaniello', 'LinkedIn')}
                         {listLink('https://github.com/aj-rom', 'GitHub')}
-                        {listLink('https://dev.com/ajrom', 'Blog')}
+                        {listLink('https://dev.to/ajrom', 'Blog')}
                     </ul>
                 </section>
 
