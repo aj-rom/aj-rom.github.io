@@ -26,6 +26,25 @@ html {
     cursor: default;
 }
 
+/* Page Sectioning (Containers) */
+main {
+    display: block;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+body > header,
+body > main,
+body > footer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: var(--section-spacing-vertical) 0;
+}
+
 /* Extras */
 header {
     text-align: center;
