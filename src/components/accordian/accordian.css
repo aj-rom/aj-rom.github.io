@@ -6,6 +6,10 @@ details {
     border-bottom: var(--border-width) solid var(--accordion-border-color);
 }
 
+details nav {
+    justify-content: center;
+}
+
 details summary {
     color: var(--accordion-close-summary-color);
     line-height: 1rem;
